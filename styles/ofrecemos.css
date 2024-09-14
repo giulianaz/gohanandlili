@@ -1,0 +1,904 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url('../img/fondo2.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en una columna */
+}
+
+nav {
+    color: white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul.nav-links li a.selected {
+    background-color: rgb(59, 1, 64); /* Color morado oscuro para el fondo */
+    color: white; /* Color blanco para el texto */
+    border-radius: 100px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border: 2px solid white; /* Borde blanco alrededor del enlace seleccionado */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+nav ul.nav-links li a.selected:hover {
+    background-color: rgb(59, 1, 64); /* Mantiene el color de fondo en hover */
+    color: white; /* Mantiene el color del texto en hover */
+}
+
+
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los iconos sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu-social-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+nav ul.nav-links li {
+    display: inline;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    margin-left: 10px;
+}
+
+/* Asegura que el main expanda el espacio disponible */
+main {
+    padding: 20px;
+    flex: 1; /* Permite que el main crezca y ocupe el espacio disponible */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: rgb(131, 30, 163);
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* Asegura que el footer se mantenga en la parte inferior */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Asegura que haya espacio entre las columnas */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px; /* Añade margen horizontal para las columnas */
+    padding-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 170px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.redes {
+    display: flex; /* Organiza los iconos en una fila */
+    gap: 20px; /* Ajusta el espacio entre los iconos */
+}
+
+.redes a {
+    display: block;
+}
+
+.redes img {
+    vertical-align: middle; /* Alinea verticalmente los íconos */
+    width: 24px; /* Tamaño ajustable de los íconos */
+    height: 24px;
+}
+
+.footer-column.redes-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 150px; /* Asegura que tenga un ancho mínimo adecuado */
+}
+
+.footer-column.redes-wrapper h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column.redes-wrapper .redes {
+    margin-top: 10px; /* Espacio entre el texto y los íconos */
+}
+
+
+/* Sección dividida en dos columnas */
+/* Sección dividida en dos columnas */
+.two-columns-section {
+    display: flex; /* Organiza las columnas en una fila */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio interno alrededor de la sección */
+    margin: 50px 0; /* Espacio externo arriba y abajo de la sección */
+    margin-left: 80px;
+}
+
+.column {
+    flex: 1; /* Permite que ambas columnas se ajusten a un tamaño igual */
+}
+
+.title-part1, .title-part2 {
+    display: inline-block; /* Permite aplicar estilos de subrayado por separado */
+    border-bottom: 2px solid rgb(88, 205, 255); /* Subrayado celeste para cada línea */
+    margin-bottom: 10px; /* Espacio entre las dos líneas */
+    font-size: 40px;
+}
+
+.title-part1 {
+    color: white; /* Color del texto blanco */
+    background-color: rgb(88, 205, 255); /* Color de fondo celeste para el título */
+    padding-left: 50px;
+    padding-right: 93px;
+    border-radius: 100px; /* Bordes redondeados */
+}
+
+.title-part2 {
+    background-color: rgb(88, 205, 255); /* Color de fondo celeste para el título */
+    color: rgb(40, 6, 69); /* Color morado oscuro para "AI WANT 2 TEACH" */
+    border-radius: 70px; /* Bordes redondeados */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.question-mark {
+    color: white; /* Color blanco para el signo de interrogación */
+}
+
+.column-text p {
+    margin-top: 30px;
+    margin-left: 50px;
+    color: white; /* Color del texto debajo del título */
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+.column-image img {
+    margin-left: 0px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    margin-top: 100px;
+}
+
+
+/* Nueva sección de problemática */
+.problematic-section {
+    background-color: rgb(244, 244, 244);
+    margin-top: 250px;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: left;
+    padding: 50px 100px;
+}
+
+.problematic-title {
+    background-color: rgb(58, 0, 63); /* Color de fondo oscuro para el título */
+    color: white; /* Color del texto blanco */
+    border-radius: 70px; /* Bordes redondeados */
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: inline-block; /* Ajusta el ancho del fondo al tamaño del texto */
+    padding: 10px 20px; /* Ajusta el padding para el espacio alrededor del texto */
+    margin-bottom: 40px;
+}
+
+.problematic-columns {
+    display: flex; /* Organiza las columnas en una fila */
+    gap: 80px; /* Espacio entre las columnas */
+    justify-content: space-between; /* Espacio uniforme entre columnas */
+    position: relative; /* Para posicionar las líneas en relación con la fila de columnas */
+}
+
+.problematic-column {
+    flex: 1; /* Permite que las columnas se ajusten al tamaño igual */
+    padding: 40px;
+    background-color: #f4f4f4; /* Color de fondo claro para las columnas */
+    color: #333; /* Color del texto en las columnas */
+    position: relative; /* Para posicionar los elementos internos */
+}
+
+.problematic-column h3 {
+    color: rgb(62, 24, 64); /* Color morado para los títulos de cada problema */
+    margin-bottom: 10px;
+    font-size: 28px;
+    display: flex; /* Organiza el número y el texto en línea */
+    align-items: center; /* Alinea verticalmente el número y el texto */
+    gap: 10px; /* Espacio entre el círculo y el título */
+}
+
+.problematic-column .number-circle {
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    background-color: rgb(190, 235, 254); /* Color celeste del círculo */
+    color: rgb(44, 22, 70); /* Color del número dentro del círculo */
+    display: flex; /* Centra el número dentro del círculo */
+    align-items: center; /* Centra verticalmente el número */
+    justify-content: center; /* Centra horizontalmente el número */
+    font-size: 20px; /* Tamaño del número */
+    font-weight: bold; /* Negrita para el número */
+    position: relative; /* Necesario para posicionar la línea correctamente */
+    z-index: 2; /* Coloca la línea detrás del contenido */
+}
+
+
+/* Línea desde el primer círculo hasta el segundo */
+.problematic-column:nth-child(1)::after {
+    width: calc(100% + 40px); /* Asegura que la línea sea lo suficientemente larga */
+    left: 50%; /* Alinea la línea al centro del círculo */
+}
+
+/* Línea desde el segundo círculo hasta el tercer */
+.problematic-column:nth-child(2)::after {
+    width: calc(100% + 40px); /* Asegura que la línea sea lo suficientemente larga */
+    left: 50%; /* Alinea la línea al centro del círculo */
+}
+
+.horizontal-line {
+    border: none; /* Elimina el borde por defecto */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea (negro en este caso) */
+}
+
+/* Estilos para la línea horizontal */
+.problematic-column {
+    position: relative; /* Para posicionar la línea en relación con la columna */
+    padding: 20px; /* Añade un poco de padding para que no esté pegado al borde */
+}
+
+.line {
+    position: absolute; /* Posiciona la línea en la columna */
+    top: 14%; /* Centra verticalmente la línea en la columna */
+    left: 310px; /* Alinea la línea al borde izquierdo de la columna */
+    width: 60%; /* Longitud de la línea igual al ancho de la columna */
+    height: 3px; /* Grosor de la línea */
+    background-color: rgb(58, 0, 63); /* Color de la línea */
+    z-index: 1; /* Coloca la línea detrás del contenido */
+    transform: translateY(-50%); /* Ajusta la línea para que esté centrada verticalmente */
+}
+
+.problematic-column p {
+    color: rgb(117, 89, 121);
+    font-weight: bolder; /* Cambiado a font-weight para aplicar negrita */
+    font-size: 16px;
+    margin-right: 30px;
+    margin-left: 50px;
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Nueva sección */
+.new-section {
+    padding: 40px 20px; /* Espacio interno alrededor de la sección */
+    margin-bottom: 50px; /* Espacio externo arriba y abajo de la sección */
+    background-color: #f4f4f4; /* Color de fondo claro */
+}
+
+.new-section-title {
+    color: rgb(40, 6, 69); /* Color morado para el título */
+    background-color: rgb(88, 205, 255); /* Color celeste de fondo para destacar el título */
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.new-section-columns {
+    display: flex; /* Organiza las columnas en una fila */
+    gap: 20px; /* Espacio entre las columnas */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+.new-section-column {
+    flex: 1; /* Permite que las columnas se ajusten a un tamaño igual */
+}
+
+.new-section-image img {
+    width: 100%; /* Hace que la imagen ocupe el ancho completo de la columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 500px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.new-section-text {
+    padding: 20px; /* Espacio interno alrededor del texto */
+    color: #333; /* Color del texto */
+}
+
+.new-section-text h3 {
+    color: rgb(40, 6, 69); /* Color morado para el subtítulo */
+    font-size: 28px; /* Tamaño del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+}
+
+.new-section-text p {
+    font-size: 18px; /* Tamaño de la fuente del párrafo */
+    line-height: 1.6; /* Altura de la línea */
+}
+
+/* Estilos para la nueva sección de información adicional */
+.additional-info-section {
+    padding: 50px 100px; /* Espacio interno alrededor de la sección */
+    margin: 50px 0; /* Espacio externo arriba y abajo de la sección */
+    margin-top: -10px;
+}
+
+.additional-info-title {
+    background-color: rgb(88, 205, 255); /* Fondo celeste para el título */
+    color: rgb(58, 0, 63); /* Texto morado para el título */
+    border-radius: 70px; /* Bordes redondeados */
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: inline-block; /* Ajusta el ancho del fondo al tamaño del texto */
+    padding: 10px 20px; /* Ajusta el padding para el espacio alrededor del texto */
+}
+
+.additional-info-columns {
+    display: flex; /* Organiza las columnas en una fila */
+    gap: 0px; /* Espacio entre las columnas */
+}
+
+.column {
+    flex: 1; /* Permite que las columnas se ajusten a un tamaño igual */
+    margin-top: 40px;
+}
+
+.column-info {
+    margin-left: -200px;
+}
+
+.column-image2{
+    margin-right: 200px;
+}
+
+.column-image2 img {
+    width: 80%; /* Hace que la imagen ocupe el ancho completo de la columna */
+    height: 300px; /* Mantiene la proporción de la imagen */
+    max-height: 500px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.column-info .info-row {
+    display: flex; /* Organiza el logo y el texto en una fila */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    gap: 20px; /* Espacio entre el logo y el texto */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.info-logo {
+    width: 50px; /* Tamaño del logo (ajustable según sea necesario) */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.info-row p{
+    color: rgb(117, 89, 121);
+    font-size: 18px;
+}
+
+.nav-mb{
+    display: none;
+    }
+
+@media (max-width: 768px) {
+
+    main{
+        padding:20px
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+    }
+
+    .text-content h1 span.ia-highlight {
+        background-color: transparent; /* Color de fondo celeste claro */
+        border-radius: 0px; /* Bordes redondeados */
+        padding: 0 12px;
+    }
+
+    .text-content h2 {
+        margin-right: 20px;
+        color: black;
+    }
+
+    .video-content iframe {
+        width: 100%;
+        height: 250px; 
+        border: none;
+    }
+
+    .highlight-section {
+        padding: 10px 10px 20px 10px;
+        margin-top: 0px;
+    }
+
+    .highlight-title {  
+        font-size: 25px;
+        border-radius: 60px;
+        padding: 10px 25px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .highlight-cards {
+        gap: 25px;
+    }
+
+    .card {
+        padding: 20px;
+        border: none;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .new-section {
+        padding: 25px 0;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .new-section-title{
+        font-size: 25px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo-container {
+        gap: 30px;
+    }
+
+    .large-logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .new-section-subtitle {
+        font-size: 21px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    html, body {
+        background-image: url('../img/fondo3.png');
+        font-family: 'Poppins', sans-serif;
+        background-size: cover;
+        background-position: top;
+        color: white;
+        display: flex;
+    }
+
+    .nav-dk{
+        display: none;
+    }
+
+    .navbar-header{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav-mb a {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .nav-mb {
+        background-color: #572058;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        color: #fff;
+    }
+    
+    .nav-mb input[type="checkbox"] {
+        display: none;
+    }
+    
+    .nav-mb label {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        width: 40px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    nav ul.nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-mb input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+    }
+    
+    .nav-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        padding: 10px;
+        background-color: #371738;
+        width: 100%;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-links li a:hover {
+        color: #cce6ff;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    /* Ajusta los estilos de la sección problemática */
+    .problematic-section {
+        padding: 20px; /* Reduce el padding en la sección problemática */
+        margin-top: 0; /* Ajusta el margen superior */
+    }
+
+    .problematic-title {
+        font-size: 28px; /* Reduce el tamaño de la fuente del título */
+        padding: 8px 15px; /* Ajusta el padding */
+    }
+
+    .problematic-columns {
+        flex-direction: column; /* Coloca las columnas en una columna */
+        gap: 20px; /* Ajusta el espacio entre las columnas */
+    }
+
+    .problematic-column {
+        padding: 20px; /* Ajusta el padding en las columnas */
+    }
+
+    .line {
+        width: 50%; /* Ajusta el ancho de la línea */
+    }
+
+    .new-section {
+        padding: 20px; /* Reduce el padding en la nueva sección */
+        margin-bottom: 30px; /* Reduce el margen inferior */
+    }
+
+    .new-section-title {
+        font-size: 28px; /* Reduce el tamaño de la fuente del título */
+        padding: 10px 15px; /* Ajusta el padding */
+    }
+
+    .new-section-columns {
+        flex-direction: column; /* Coloca las columnas en una columna */
+    }
+
+    .new-section-image img {
+        max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+    }
+
+    .additional-info-section {
+        padding: 20px; /* Reduce el padding en la sección de información adicional */
+        margin: 20px 0; /* Ajusta el margen superior e inferior */
+    }
+
+    .additional-info-title {
+        font-size: 28px; /* Reduce el tamaño de la fuente del título */
+        padding: 10px 15px; /* Ajusta el padding */
+    }
+
+    .additional-info-columns {
+        flex-direction: column; /* Coloca las columnas en una columna */
+    }
+
+    .column-info {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    }
+
+    .column-image2 {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    }
+
+    .column-image2 img {
+        height: 200px; /* Ajusta la altura de las imágenes */
+    }
+
+    .info-row {
+        flex-direction: column; /* Coloca el logo y el texto en una columna */
+        align-items: flex-start; /* Alinea el contenido a la izquierda */
+    }
+
+    .info-logo {
+        width: 40px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    }
+
+    .two-columns-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+        padding: 0; /* Elimina el padding */
+        margin: 0; /* Elimina el margen */
+        text-align: center; /* Asegura que el texto esté centrado en toda la sección */
+    }
+
+    .column {
+        width: 100%; /* Hace que cada columna ocupe el 100% del ancho disponible */
+        padding: 0; /* Elimina el padding */
+        margin: 0; /* Elimina el margen */
+    }
+
+    .column-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px; /* Añade un poco de padding a los lados para evitar que el texto toque los bordes */
+        margin: 0 auto; /* Centra la columna de texto horizontalmente */
+        text-align: center;
+    }
+
+    .column-image img {
+        width: 100%; /* Ajusta el tamaño de la imagen al ancho de la columna */
+        height: auto; /* Mantiene la proporción de la imagen */
+        max-height: 300px; /* Limita la altura máxima de la imagen */
+        object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsionarse */
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .column-image2 img {
+        width: 100%;
+        height: 300px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+
+    .titulos {
+        margin: 0; /* Elimina el margen */
+        padding: 0; /* Elimina el padding */
+    }
+
+    .title-part1, .title-part2 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.2; /* Ajusta el interlineado para mejorar la legibilidad */
+        color: #000 !important; /* Asegura que el color del texto sea negro, usa !important para sobrescribir estilos existentes */
+    }
+
+    .title-part2 {
+        font-weight: bold; /* Resalta el texto de la segunda parte del título */
+    }
+
+    p {
+        font-size: 16px; /* Ajusta el tamaño de la fuente del párrafo */
+        color: #000 !important; /* Asegura que el color del texto del párrafo sea negro */
+        text-align: center; /* Centra el texto del párrafo */
+    }
+
+    .column-text p {
+        margin-top: 30px;
+        margin-left: 10px;
+        color: white;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+        .blue-section {
+        background-color: #007bff; /* Color de fondo azul */
+        color: #ffffff; /* Color del texto blanco */
+        padding: 2rem 1rem; /* Padding alrededor para evitar que el contenido toque los bordes */
+        margin: 0; /* Elimina el margen */
+        width: 100%; /* Asegura que el contenedor use el ancho completo */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+        display: flex;
+        flex-direction: column; /* Organiza el contenido en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto */
+        min-height: 100vh; /* Asegura que el contenedor cubra al menos el alto de la vista */
+    }
+
+    .title {
+        width: 100%; /* Asegura que el contenedor de título use el ancho completo */
+        margin: 0; /* Elimina margen */
+        padding: 0; /* Elimina padding */
+        display: flex;
+        flex-direction: column; /* Organiza el contenido en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto */
+    }
+
+    .title h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+        margin: 0; /* Elimina margen */
+        padding: 0; /* Elimina padding */
+    }
+
+    .email-logo {
+        display: none; /* Oculta el ícono de correo */
+    }
+
+    .form {
+        width: 100%; /* Asegura que el formulario use el ancho completo */
+        margin: 0; /* Elimina margen */
+        padding: 0; /* Elimina padding */
+        display: flex;
+        flex-direction: column; /* Organiza los campos del formulario en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 1rem; /* Espacio entre los campos del formulario */
+    }
+
+    .form form {
+        width: 100%; /* Asegura que el formulario use el ancho completo */
+        display: flex;
+        flex-direction: column; /* Organiza los campos del formulario en columna */
+        gap: 1rem; /* Espacio entre los campos del formulario */
+    }
+
+    .form label {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente de las etiquetas */
+        margin: 0; /* Elimina margen */
+        padding: 0; /* Elimina padding */
+    }
+
+    .form input, .form textarea {
+        width: calc(100% - 2rem); /* Asegura que los campos ocupen el ancho completo menos el padding */
+        padding: 0.5rem; /* Añade padding interno a los campos */
+        border: none; /* Elimina el borde de los campos */
+        border-radius: 4px; /* Bordes redondeados */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+
+    .form textarea {
+        resize: vertical; /* Permite redimensionar verticalmente */
+        height: 100px; /* Ajusta la altura del área de texto */
+    }
+
+    .form button {
+        background-color: #0056b3; /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto del botón */
+        border: none; /* Elimina el borde del botón */
+        padding: 0.75rem 1.5rem; /* Padding interno del botón */
+        border-radius: 4px; /* Bordes redondeados del botón */
+        cursor: pointer; /* Cambia el cursor al pasar por encima */
+        font-size: 1rem; /* Ajusta el tamaño de la fuente del botón */
+        margin: 0; /* Elimina margen */
+        width: auto; /* Ajusta el ancho del botón automáticamente */
+    }
+
+    .form button:hover {
+        background-color: #004494; /* Color de fondo al pasar el ratón por encima */
+    }
+
+    .footer-logo {
+        width: 0;
+        height: 0;
+    }
+    
+  }
