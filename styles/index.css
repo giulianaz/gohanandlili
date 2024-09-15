@@ -80,9 +80,16 @@ nav .logo a {
     font-size: 22px;
 }
 
+nav .logo a img{
+    width: 150px;
+    margin-right: 60px;
+    margin-top: -47px;
+}
+
 .menu-social-container {
     display: flex;
     align-items: center;
+    margin-top: -70px;
 }
 
 nav ul.nav-links {
@@ -513,7 +520,7 @@ main {
     }
 
     .nav-mb {
-        background-color: #572058;
+        background-color: rgb(131, 30, 163);
         display: block;
         display: flex;
         flex-direction: column;
@@ -562,6 +569,7 @@ main {
         padding: 10px;
         background-color: #371738;
         width: 100%;
+        border-radius: 100px;
     }
     
     .nav-links li a {

@@ -79,9 +79,16 @@ nav .logo a {
     font-size: 22px;
 }
 
+nav .logo a img{
+    width: 150px;
+    margin-right: 60px;
+    margin-top: -47px;
+}
+
 .menu-social-container {
     display: flex;
     align-items: center;
+    margin-top: -70px;
 }
 
 nav ul.nav-links {
@@ -249,17 +256,16 @@ footer {
 
 .column-image img {
     margin-left: 0px;
-    height: 500px;
-    width: 500px;
+    height: 780px;
+    width: 780px;
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    margin-top: 100px;
+    margin-top: -30px;
 }
 
 
 /* Nueva sección de problemática */
 .problematic-section {
     background-color: rgb(244, 244, 244);
-    margin-top: 250px;
     margin-left: -20px;
     margin-right: -20px;
     text-align: left;
@@ -596,7 +602,7 @@ footer {
     }
 
     .nav-mb {
-        background-color: #572058;
+        background-color: rgb(131, 30, 163);
         display: block;
         display: flex;
         flex-direction: column;
@@ -645,6 +651,7 @@ footer {
         padding: 10px;
         background-color: #371738;
         width: 100%;
+        border-radius: 100px;
     }
     
     .nav-links li a {
